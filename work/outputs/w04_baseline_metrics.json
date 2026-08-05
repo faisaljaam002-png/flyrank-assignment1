@@ -1,0 +1,22 @@
+{
+  "base_declining_rate": 0.5421,
+  "csv_output": "work/outputs/baseline_action_score.csv",
+  "precision_at_10": 0.8,
+  "precision_at_50": 0.8,
+  "reason_code_counts": {
+    "ctr_lag_visible": 10730,
+    "low_traffic_monitor": 11248,
+    "stale_visible": 863,
+    "visible_opportunity": 7159
+  },
+  "rows": 30000,
+  "score_formula": {
+    "ctr_gap": 0.85,
+    "stale_tail_gated_104d": 0.1,
+    "volume_tiebreak": 0.15
+  },
+  "verdicts": {
+    "ctr_vs_position_ctr_fix_flag": "CONFIRMED",
+    "staleness_refresh_flags": "MIXED"
+  }
+}
