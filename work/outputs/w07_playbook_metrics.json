@@ -1,0 +1,67 @@
+{
+  "action_label_counts": {
+    "monitor": 11248,
+    "refresh": 863,
+    "refresh_and_review_ctr": 10730,
+    "watch_and_monitor": 7159
+  },
+  "archetype_counts": {
+    "buried_visible": 5547,
+    "ctr_lag_visible": 8904,
+    "quiet_low_volume": 11248,
+    "stale_tail_visible": 863,
+    "visible_opportunity": 1612,
+    "zero_click_visible": 1826
+  },
+  "base_declining_rate_full": 0.5421,
+  "base_declining_rate_test": 0.6341,
+  "clients": 32,
+  "decay_refresh_insight": {
+    "fresh_30d_rate": 0.581,
+    "staleness_verdict": "MIXED - only the 104+ day tail is elevated",
+    "tail_104d_rate": 0.6195,
+    "zero_click_visible_rate": 0.7623
+  },
+  "figures": [
+    "work/figures/w07_precision_at_k.png",
+    "work/figures/w07_staleness_insight.png",
+    "work/figures/w07_ctr_insight.png",
+    "work/figures/w07_archetype_actions.png"
+  ],
+  "full_slice_precision": {
+    "P@10": 0.8,
+    "P@50": 0.8
+  },
+  "held_out_clients": 8,
+  "held_out_precision": {
+    "Logistic Regression": {
+      "P@10": 0.8,
+      "P@50": 0.86
+    },
+    "Random Forest": {
+      "P@10": 0.8,
+      "P@50": 0.88
+    },
+    "Transparent rule (w04)": {
+      "P@10": 0.9,
+      "P@50": 0.92
+    }
+  },
+  "metrics_json": "work/outputs/w07_playbook_metrics.json",
+  "no_go": [
+    "no auto-refresh/auto-edit",
+    "no auto-prune/delete",
+    "no auto-decision on zero-CTR",
+    "no score-only delegation",
+    "no causal wording"
+  ],
+  "queue_csv": "work/outputs/action_playbook_queue.csv",
+  "reason_code_counts": {
+    "ctr_lag_visible": 10730,
+    "low_traffic_monitor": 11248,
+    "stale_visible": 863,
+    "visible_opportunity": 7159
+  },
+  "rows": 30000,
+  "zero_ctr_stable_quirk_n": 415
+}
