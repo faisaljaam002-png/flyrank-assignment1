@@ -1,0 +1,51 @@
+{
+  "rows": 30000,
+  "clients": 32,
+  "base_rate_full": 0.5420666666666667,
+  "base_rate_test": 0.6340901612372492,
+  "held_out_precision": {
+    "Transparent rule (w04)": {
+      "P@10": 0.9,
+      "P@50": 0.92
+    },
+    "Logistic Regression": {
+      "P@10": 0.8,
+      "P@50": 0.86,
+      "AUC": 0.7238530918907842,
+      "AP": 0.7932313622921605
+    },
+    "Random Forest": {
+      "P@10": 0.8,
+      "P@50": 0.88,
+      "AUC": 0.7215276040713874,
+      "AP": 0.7883084029440559
+    }
+  },
+  "archetype_counts": {
+    "quiet_low_volume": 11248,
+    "ctr_lag_visible": 8904,
+    "buried_visible": 5547,
+    "zero_click_visible": 1826,
+    "visible_opportunity": 1612,
+    "stale_tail_visible": 863
+  },
+  "action_label_counts": {
+    "monitor": 11248,
+    "refresh_and_review_ctr": 10730,
+    "watch_and_monitor": 7159,
+    "refresh": 863
+  },
+  "reason_code_counts": {
+    "low_traffic_monitor": 11248,
+    "ctr_lag_visible": 10730,
+    "visible_opportunity": 7159,
+    "stale_visible": 863
+  },
+  "figures": [
+    "work/figures/w07_archetype_actions.png",
+    "work/figures/w07_ctr_insight.png",
+    "work/figures/w07_precision_at_k.png",
+    "work/figures/w07_staleness_insight.png"
+  ],
+  "seed": 2026
+}
