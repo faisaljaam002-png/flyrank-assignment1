@@ -132,7 +132,7 @@ score       = 0.85 * ctr_gap + 0.10 * stale_tail + 0.15 * volume_pct</pre>
 
 <p>Why does the simple rule win? Two complementary mechanisms surface from the data:</p>
 <ul>
-  <li><strong>CTR at a good position is the strongest signal</strong>, and it is nearly monotone: declining rate rises from ~0.4 at CTR &gt; 1.5% to ~0.7 below 0.1% (Figure 3). A random forest must re-learn this from 47 columns; the rule encodes it directly.</li>
+  <li><strong>CTR at a good position is the strongest signal</strong>, and it is nearly monotone: declining rate rises from ~0.4 at CTR &gt; 1.5% to ~0.7 below 0.1% (Figure 2). A random forest must re-learn this from 47 columns; the rule encodes it directly.</li>
   <li><strong>The forest&rsquo;s top picks lean on volume, not risk.</strong> Among the forest&rsquo;s top-50 there are 6 false alarms (scored urgent but not declining), and its misses are the low-volume pages where a decline cannot be separated from noise &mdash; the median missed decline has ~1,150 90-day impressions.</li>
 </ul>
 
